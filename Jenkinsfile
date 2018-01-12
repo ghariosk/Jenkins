@@ -8,7 +8,7 @@ node {
     stage("test2") {
 
         echo 'Hello Wolrd'
-        echo 'Another hello 2'
+        echo 'Another hello 22'
     }
 }
 
