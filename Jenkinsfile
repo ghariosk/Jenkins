@@ -1,5 +1,7 @@
 #!/usr/bin/env groovy
-asRoot() {
+
+
+def asRoot() {
 	withCredentials([usernameColonPassword(credentialsId: '002', variable: 'MY_CREDENTIAL_ROOT')]) {
 
 	}
