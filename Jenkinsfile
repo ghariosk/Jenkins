@@ -29,17 +29,17 @@ node {
 
         git credentialsId: '001', url: 'git@github.com:ghariosk/Python.git'
 
-      //   asRoot() {
+        asRoot(
 
 
 
-	     //    sh '''
+	        sh '''
 
-	     //    	ls -als
-	     //    	echo "50" | python prime.py
+	        	ls -als
+	        	echo "50" | python prime.py
 
-	     // 	'''
-     	// }
+	     	'''
+     	)
 
      	
     }
