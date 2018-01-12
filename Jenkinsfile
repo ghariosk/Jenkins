@@ -7,6 +7,11 @@ node {
 
     stage("test2") {
 
+    	
+    // some block
+
+
+
         echo 'Hello Wolrd'
         echo 'Another hello test'
 
@@ -14,13 +19,16 @@ node {
 
         git credentialsId: '001', url: 'git@github.com:ghariosk/Python.git'
 
+        withCredentials([usernameColonPassword(credentialsId: '002', variable: 'MY_CREDENTIAL_ROOT')]) {
 
         sh '''
 
         	ls -als
-        	./prime.py '23'
+        	echo "50" | python prime.py
 
      	'''
+
+     	}
     }
 }
 
