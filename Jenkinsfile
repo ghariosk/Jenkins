@@ -9,6 +9,8 @@ node {
 
         echo 'Hello Wolrd'
         echo 'Another hello test'
+
+        println 'test'
     }
 }
 
