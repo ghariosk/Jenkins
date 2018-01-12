@@ -8,6 +8,7 @@ node {
     stage("test2") {
 
         echo 'Hello Wolrd'
+        echo 'Another hello'
     }
 }
 // vim : ft=groovy
