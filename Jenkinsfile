@@ -1,7 +1,13 @@
 #!/usr/bin/env groovy
 
-pipeline {
-	println('Hello World!')
-}
+node {
+    stage("hello") {
+        echo 'Hello World'
+    } 
 
+    stage("test2") {
+
+        echo 'Hello Wolrd'
+    }
+}
 // vim : ft=groovy
