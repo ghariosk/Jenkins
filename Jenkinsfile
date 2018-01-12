@@ -35,6 +35,12 @@ node {
 	        	echo "50" | python prime.py
 		 	'''
 	    }
+
+    }
+    stage("Waiting for Deployment") {
+    	input 'Do you want to approve the deployment?'
+
+    	println "Deploying ..."
     }
 }
 
