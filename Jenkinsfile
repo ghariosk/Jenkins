@@ -1,9 +1,9 @@
 #!/usr/bin/env groovy
 
 
-def asRoot(delegate) {
+def asRoot(anything) {
 	withCredentials([usernameColonPassword(credentialsId: '002', variable: 'MY_CREDENTIAL_ROOT')]) {
-	 delegate () 
+	 anything() 
 	}
 }
 
