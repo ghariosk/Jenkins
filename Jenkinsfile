@@ -11,6 +11,14 @@ node {
         echo 'Another hello test'
 
         println 'test'
+
+        git 'git@github.com:ghariosk/Python.git'
+
+        sh '''
+
+        	ls -al
+
+     	'''
     }
 }
 
