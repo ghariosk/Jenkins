@@ -10,7 +10,7 @@ node {
         echo 'Hello Wolrd'
         echo 'Another hello test'
 
-        println 'test'
+        println 'test2'
 
         git 'git@github.com:ghariosk/Python.git'
 
