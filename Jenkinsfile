@@ -17,7 +17,7 @@ node {
 
         sh '''
 
-        	ls -al
+        	ls -als
 
      	'''
     }
