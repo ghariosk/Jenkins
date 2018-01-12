@@ -1,4 +1,11 @@
 #!/usr/bin/env groovy
+asRoot() {
+	withCredentials([usernameColonPassword(credentialsId: '002', variable: 'MY_CREDENTIAL_ROOT')]) {
+
+	}
+}
+
+
 
 node {
     stage("hello") {
@@ -17,18 +24,22 @@ node {
 
         println 'test2'
 
+
         git credentialsId: '001', url: 'git@github.com:ghariosk/Python.git'
 
-        withCredentials([usernameColonPassword(credentialsId: '002', variable: 'MY_CREDENTIAL_ROOT')]) {
+        asRoot() {
 
-        sh '''
 
-        	ls -als
-        	echo "50" | python prime.py
 
-     	'''
+	        sh '''
 
+	        	ls -als
+	        	echo "50" | python prime.py
+
+	     	'''
      	}
+
+     	
     }
 }
 
