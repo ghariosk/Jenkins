@@ -12,7 +12,8 @@ node {
 
         println 'test2'
 
-        git 'git@github.com:ghariosk/Python.git'
+        git credentialsId: '001', url: 'git@github.com:ghariosk/Python.git'
+
 
         sh '''
 
