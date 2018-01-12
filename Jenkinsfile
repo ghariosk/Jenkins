@@ -8,10 +8,10 @@ node {
     stage("test2") {
 
         echo 'Hello Wolrd'
-        echo 'Another hello'
+        echo 'Another hello 2'
     }
 }
-// vim : ft=groovy
-
 
 //a20565f22911f70291efc311ae3e740b9192063f
+// vim : ft=groovy
+
