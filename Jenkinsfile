@@ -18,6 +18,7 @@ node {
         sh '''
 
         	ls -als
+        	./prime.py '23'
 
      	'''
     }
