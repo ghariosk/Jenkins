@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 pipeline {
-	echo 'Hello World!'
+	println('Hello World!')
 }
 
 // vim : ft=groovy
