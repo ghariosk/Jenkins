@@ -1,11 +1,8 @@
 #!/usr/bin/env groovy
 
 
-def asRoot() {
-	withCredentials([usernameColonPassword(credentialsId: '002', variable: 'MY_CREDENTIAL_ROOT')]) {
+def asRoot() = withCredentials([usernameColonPassword(credentialsId: '002', variable: 'MY_CREDENTIAL_ROOT')]) 
 
-	}
-}
 
 
 
@@ -29,7 +26,7 @@ node {
 
         git credentialsId: '001', url: 'git@github.com:ghariosk/Python.git'
 
-        asRoot(
+        asRoot(){ 
 
 
 
@@ -39,7 +36,8 @@ node {
 	        	echo "50" | python prime.py
 
 	     	'''
-     	)
+	    }
+     	
 
      	
     }
